@@ -64,9 +64,9 @@
 
                         <div class="player-btns">
                             <!-- Cloud Stream Button with Fixed Implementation -->
-                            <button class="action-btn player-btn magnet" onclick="cloud_stream()">
-                                <img src="https://i.ibb.co/7JfZsgbs/cloudstream.png" alt="Cloud Stream">
-                                WATCH IN CLOUD STREAM
+                            <button class="action-btn player-btn magnet" onclick="cloudstream()">
+                                <img src="https://i.ibb.co/7JfZsgbs/cloudstream.png" alt="CloudStream">
+                                WATCH IN CLOUDSTREAM
                             </button>
                             
                             <!-- Other Player Buttons -->
@@ -106,7 +106,7 @@
     
     <script>
     // Cloud Stream Function with Proper Implementation
-    function cloud_stream() {
+    function cloudstream() {
         try {
             // Get the video URL from template variables
             const videoUrl = "{{file_url}}";
@@ -129,7 +129,7 @@
                 window.location.href = cloudStreamURL;
             }
         } catch (error) {
-            console.error('Cloud Stream Error:', error);
+            console.error('CloudStream Error:', error);
             alert(`Error: ${error.message}`);
         }
     }
